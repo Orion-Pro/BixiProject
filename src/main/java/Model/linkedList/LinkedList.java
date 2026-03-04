@@ -31,8 +31,16 @@ public class LinkedList<T> implements List<T> {
         return head == null;
     }
 
+    public T removeFromFront() {
+        Node<T> removed = head;
+        head = null;
+        head = removed.next;
+        n--;
+        return removed.data;
+    }
+
     @Override
-    public T pop() {
+    public T removeFromBack() {
         Node<T> removed = tail;
         tail = null;
         tail = removed.prev;
