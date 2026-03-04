@@ -1,4 +1,4 @@
 package Model.linkedList;
 
-public interface List {
+public interface List<T> {
 }
