@@ -21,5 +21,9 @@ public class BixiTrip {
 
     public int durationMin() {return endTimeMin - startTimeMin;}
 
+    public int getHour() {return startTimeMin % 24}
+
+    //Something is wrong with how I plan to implement time, UNIX timestamp gives the amount of time since January 1st 1970
+    //
 
 }

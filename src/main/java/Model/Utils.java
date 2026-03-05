@@ -13,4 +13,14 @@ public class Utils {
         System.out.println(inputCSV.getAbsolutePath()); //useful for loading
     }
 
+    private static final int SECONDS_PER_DAY = 86_400;
+    private static final int SECONDS_PER_HOUR = 3_600;
+
+    public static short dayOfYear(int secondsSinceEpoch) {
+        int startYearTimeStamp = 1735689600; //Jan 1st 2025 (Hard coded, did not yet figure out how to calculate the date from timestamp)
+
+    }
+
+
+
 }
